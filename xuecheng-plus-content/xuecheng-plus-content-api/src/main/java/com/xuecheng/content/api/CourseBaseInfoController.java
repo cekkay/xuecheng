@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * @author shi
- * @Description 相关描述
+ * @Description 课程基本信息
  * @create 2023-05-2023/5/5-15:56
  */
 @Api(value = "课程信息管理接口", tags = "课程信息管理接口")
@@ -52,6 +52,12 @@ public class CourseBaseInfoController {
     public CourseBaseInfoDto modifyCourseBase(@RequestBody EditCourseDto editCourseDto) {
         Long companyId = 1232141425L;
         return courseBaseInfoService.updateCourseBase(companyId, editCourseDto);
+    }
+
+    @ApiOperation("删除课程信息")
+    @DeleteMapping("/course/{courseId}")
+    public void deleteCourseBase(@PathVariable Long courseId) {
+        courseBaseInfoService.deleteCourseBase(courseId);
     }
 
 
