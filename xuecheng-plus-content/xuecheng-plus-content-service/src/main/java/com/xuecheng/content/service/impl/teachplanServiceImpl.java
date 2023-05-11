@@ -134,5 +134,5 @@ public class teachplanServiceImpl implements TeachplanService {
         }
     }
 
-    //idea选中需要抽取的代码，快捷键Ctrl+Alt+M，可以生成方法，并替换原来的代码块
+
 }

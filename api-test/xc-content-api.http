@@ -39,5 +39,5 @@ Content-Type: application/json
 GET {{content_host}}/content/teachplan/117/tree-nodes
 
 ### 根据courseId查询教师
-GET {{content_host}}/content/courseTeacher/list/72
+GET {{gateway_host}}/content/courseTeacher/list/72
 
