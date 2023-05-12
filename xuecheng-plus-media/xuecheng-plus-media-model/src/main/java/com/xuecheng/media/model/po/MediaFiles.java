@@ -56,7 +56,7 @@ public class MediaFiles implements Serializable {
     private String bucket;
 
     /**
-     * 存储路径
+     * 存储路径,minio中的存储路径
      */
     private String filePath;
 
